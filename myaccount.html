@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Datos personales</title>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Loading Bootstrap CSS -->
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" 
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="#"><img height="80px" src="img/logo.jpg">  Clinica AwakeLab</a>
+
+      <!-- Navigation Bar Hamburger-->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navigation"
+        aria-expanded="false"
+        aria-controls="navigation" 
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- End Navigation Bar Hamburger -->
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navigation">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link scroll-trigger" 
+                href="#principal">
+                  Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a 
+                class="nav-link scroll-trigger" 
+                href="#competencias">
+                  Noticias
+              </a>
+            </li>
+            <li class="nav-item">
+              <a 
+                class="nav-link scroll-trigger" 
+                href="#equipo">
+                  Especialidades
+              </a>
+            </li>
+            <li class="nav-item">
+              <a 
+                class="nav-link scroll-trigger" 
+                href="#enlaces"> 
+                  Convenios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link scroll-trigger" 
+                href="#contacto">
+                  Contacto
+              </a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                      Perfil <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                  <a 
+                    class="dropdown-item scroll-trigger"
+                    href="myaccount.html">
+                      Perfil
+                  </a>
+                  <a class="dropdown-item scroll-trigger"
+                    href="mydiagnoses.html">
+                        Diagnosticos
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item scroll-trigger" href="index.html">
+                      Logout
+                  </a>
+              </div>
+            </li>
+         </ul>
+
+      </div>
+      <!-- Navigation Links -->
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Section: Principal
+    <div class="container-fluid bg-principal" id="principal">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="jumbotron jumbotron-main">
+            <h2>Sitio web del ejercicio de Git</h2>
+            <h3>En Pandemia</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    End Section: Principal -->
+
+    <!-- Section: agregarPaciente -->
+
+
+    
+    
+    <div class="container-fluid bg-light" id="contacto">
+        <br>
+        <br>
+        <br>    
+        <h2>Datos personales  </h2>
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-sm-6" id="contact-form">
+            <form>
+              <div class="form-group">
+                <label for="contact-name">Nombre</label>
+                <input type="text" class="form-control" id="pacienteValue" 
+                    placeholder="Sebastian" value="Sebastian Parada" disabled>
+              </div>
+              <div class="form-group" >
+                <label for="exampleFormControlSelect1">Prevision</label>
+                <select class="form-control" id="previsionValue" disabled>
+                  <option>Fonasa</option>
+                  <option>Isapre</option>
+                  <option>Particular</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="fechaNacimiento" 
+                    placeholder="Fecha" value="1994-10-14"disabled>
+              </div>
+              <div class="form-group">
+                <label for="contact-msg">Direccion</label>
+                <input type="text" class="form-control" id="direccionValue" value="Avenida Larrain #1732"
+                    placeholder="Detalle" disabled>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="text" class="form-control" id="email" 
+                    placeholder="Email" value="sparadaolivas@gmail.com" disabled>
+              </div>
+              <div class="btn-group">
+                <button type="button" onclick="funcionBloquear()" id="agregarDatos" class="btn btn-outline-secondary">Guardar</button>
+                <button type="button" onclick="funcionDesbloquear()" id="desbloquearform" class="btn btn-outline-secondary">Editar</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End Section: agregarPaciente -->
+
+    
+
+    <!-- Section: Enlaces -->
+    <div class="container-fluid bg-dark" id="enlaces">
+        <div class="row">
+            <h3>Convenios</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="media">
+              <img class="d-flex mr-3" src="img/fonasa.png" 
+                  alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Fonasa</h5>
+                <ul>
+                  <li>(2) 2830 6700</li>
+                  <li><a href="www.fonasa.cl">www.Fonasa.cl</a></li>
+                  <li>Paseo Bulnes 102, Santiago, Región Metropolitana</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <img class="d-flex mr-3" src="img/banmedica.png" 
+                  alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Banmedica</h5>
+                <ul>
+                  <li>(2) 600 600 3600</li>
+                  <li><a href="www.banmedica.cl">www.Banmedica.cl</a></li>
+                  <li>Av. Apoquindo 3600, Las Condes, Región Metropolitana</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="media">
+              <img class="d-flex mr-3" src="img/colmena.png" 
+                  alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Colmena</h5>
+                <ul>
+                  <li>(2) 2959 4040</li>
+                  <li><a href="www.colmena.cl">www.Colmena.cl</a></li>
+                  <li>Direccion: Los Militares 4765, Las Condes, Región Metropolitana</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <img class="d-flex mr-3" src="img/consalud.png" 
+                  alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Consalud</h5>
+                <ul>
+                  <li>(2) 2830 6700</li>
+                  <li><a href="www.consalud.cl">www.Consalud.cl</a></li>
+                  <li>Paseo Bulnes 102, Santiago, Región Metropolitana</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Section: Enlaces -->
+
+
+
+    <footer class="footer bg-dark text-center">
+      <p class="text-muted">&copy; 2020 Awakelab.</p>
+      <p class="text-muted">Grupo Full Stack Python</p>
+    </footer>
+
+    <!-- MODAL FORMS -->
+    <div class="modal" id="profile-modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+              aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+            <p class="modal-title" id="profile-modal-label">Perfil</p>
+          </div>
+            <div class="modal-body">
+              Perfil
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" 
+                  class="btn btn-secondary" 
+                  data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+     </div>
+    </div>
+    <div class="modal" id="settings-modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" 
+              aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+            <p class="modal-title" id="settings-modal-label">Configuración</p>
+          </div>
+          <div class="modal-body">
+            Configuración
+          </div>
+          <div class="modal-footer">
+            <button type="button" 
+                class="btn btn-success">Guardar</button>
+            <button type="button" 
+                class="btn btn-secondary" 
+                data-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL FORMS -->
+
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+
+    <script src="js/js.js"></script>
+
+    <script 
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
